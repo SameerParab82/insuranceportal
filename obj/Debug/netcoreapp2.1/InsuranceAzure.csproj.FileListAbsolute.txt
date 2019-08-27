@@ -31,3 +31,4 @@ D:\Azure\InsuranceAzure\obj\Debug\netcoreapp2.1\InsuranceAzure.dll
 D:\Azure\InsuranceAzure\obj\Debug\netcoreapp2.1\InsuranceAzure.pdb
 D:\Azure\InsuranceAzure\obj\Debug\netcoreapp2.1\InsuranceAzure.csproj.CopyComplete
 D:\Azure\InsuranceAzure\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.g.cshtml.cs
+D:\Azure\InsuranceAzure\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

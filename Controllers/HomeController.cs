@@ -36,8 +36,8 @@ namespace InsuranceAzure.Controllers
             {
                 var customerid = Guid.NewGuid();
                 StorageHelper storageHelper = new StorageHelper();
-                storageHelper.ConnectionString = _configuration.GetConnectionString("StorageConnection");
-
+                storageHelper.ConnectionString = _configuration.GetConnectionString("StorageConnection");//blob, queue and table storage client
+                storageHelper.CosmosConnectionString = _configuration.GetConnectionString("CosmosConnection");//cosmos table client
                 //Save Customer image to Azure BLOB
                 var tempFile = Path.GetTempFileName();
                 using (var fs = new FileStream(tempFile, FileMode.Create, FileAccess.Write))

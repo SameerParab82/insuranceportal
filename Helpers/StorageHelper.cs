@@ -26,8 +26,18 @@ namespace InsuranceAzure.Helpers
 
                 this.storageAccount = CloudStorageAccount.Parse(value);
                 this.blobClient = storageAccount.CreateCloudBlobClient();
-                this.tableClient = storageAccount.CreateCloudTableClient();
+                //this.tableClient = storageAccount.CreateCloudTableClient(); // For storage table
                 this.queueClient = storageAccount.CreateCloudQueueClient();
+            }
+        }
+
+        public string CosmosConnectionString
+        {
+            set
+            {
+                var sa = CloudStorageAccount.Parse(value);
+                this.tableClient = sa.CreateCloudTableClient();
+
             }
         }
 
